@@ -86,8 +86,7 @@ int main(){
 
     int target = 3;
     int found = 0;
-
-    // Preenche o tabuleiro
+ 
     Tabuleiro[LinhaHorizontal1][Coluna1] = 3;
     Tabuleiro[LinhaHorizontal1][Coluna1 + 1] = 3;
     Tabuleiro[LinhaHorizontal1][Coluna1 + 2] = 3;
@@ -114,10 +113,7 @@ int main(){
     aplicarhabilidade(Tabuleiro, cruz, 6, 6);  
     aplicarhabilidade(Tabuleiro, octaedro, 1, 8);  
 
-
-
-
-    // Imprime o tabuleiro
+    
     for (int i = 0; i < linhas; i++) {
         for (int j = 0; j < colunas; j++) {
             printf("%d  ", Tabuleiro[i][j]);
@@ -125,7 +121,6 @@ int main(){
         printf("\n");
     }
 
-    // Busca pelo valor alvo
     for (int i = 0; i < linhas; i++) {
         for (int j = 0; j < colunas; j++) {
             if (Tabuleiro[i][j] == target) {
